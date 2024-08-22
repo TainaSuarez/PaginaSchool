@@ -1,0 +1,172 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente  */
+    margin: 0; /* Sin márgenes externos */
+    padding: 0; /* Sin relleno interno */
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* La altura mínima es toda la ventana */
+}
+
+/* Estilo para el encabezado de la página */
+header {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 0; /* Espaciado interno arriba y abajo */
+    text-align: center; /* Texto centrado */
+}
+
+/* Texto centrado grande para el título de bienvenida */
+.centered-text {
+    font-size: 40px; /* Tamaño grande para el texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 20px 0; /* Espaciado externo arriba y abajo */
+}
+
+/* Estilos para la lista de navegación */
+nav ul {
+    list-style: none; /* Sin viñetas en la lista */
+    padding: 0; /* Sin espaciado interno */
+}
+
+/* Estilos para los elementos de la lista de navegación */
+nav ul li {
+    display: inline; /* Mostrar los elementos en línea */
+    margin: 0 15px; /* Espaciado horizontal entre los elementos */
+}
+
+/* Estilos para los enlaces del menú */
+nav ul li a {
+    color: white; /* Color del texto en los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Sección de bienvenida centrada */
+.welcome-section {
+    text-align: center; /* Centra el contenido */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+}
+
+/* Mensaje de bienvenida */
+.welcome-message {
+    font-size: 24px; /* Tamaño mediano del texto */
+    color: #3f3f3f; 
+    margin: 20px 0; /* Espaciado externo */
+}
+
+/* Estilos del carrusel */
+.carousel {
+
+    max-width: 600px; /* Máximo ancho de 600px */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    overflow: hidden; /* Oculta el contenido desbordante */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Contenedor de las diapositivas del carrusel */
+.slides {
+    display: flex; /* Muestra las diapositivas en fila */
+    transition: transform 1 ease-in-out; /* Animación suave para el cambio de diapositiva */
+}
+
+/* Estilo para cada diapositiva */
+.slide {
+    min-width: 100%; /* Cada diapositiva ocupa todo el ancho del carrusel */
+    box-sizing: border-box; /* Incluye relleno y borde en el tamaño */
+    display: flex; /* Permite el centrado de la imagen */
+    justify-content: center; /* Centra la imagen horizontal */
+    align-items: center; /* Centra la imagen vertica */
+}
+
+/* Estilo para las imágenes dentro de las diapositivas */
+.slide img {
+    max-width: 100%; /*  ancho */
+    max-height: 100%; /* altura  */
+    border-radius: 10px; 
+   
+}
+
+/* Oculta los botones de radio */
+input[type="radio"] {
+    display: none; /* Los botones de radio no son visibles */
+}
+
+/* cada radio seleccionado */
+#slide1:checked ~ .slides {
+    transform: translateX(0%); /* Muestra la primera */
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%); /* Muestra la segunda  */
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%); /* Muestra la tercera  */
+}
+
+#slide4:checked ~ .slides {
+    transform: translateX(-300%); /* Muestra la cuarta */
+}
+
+/* Controles del carrusel */
+.controls {
+    position: absolute; /* Posiciona los controles encima del carrusel */
+    top: 50%; /* Centra verticalmente los controles */
+    width: 100%; /* Los controles ocupan todo el ancho del carrusel */
+    display: flex; /* Muestra los controles en fila */
+    justify-content: space-between; /* Distribuye los controles a los extremos */
+    transform: translateY(-50%); /* Ajusta la posición vertical */
+}
+
+/* Estilo para los botones de control */
+.control-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; /*
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    border: none; /* Sin bordes */
+    border-radius: 50%; /* Bordes redondeados */
+    font-size: 24px; /* Tamaño del texto */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #f4f4f4; 
+    color: white; 
+    padding: 20px 0; 
+    text-align: center; /* Texto centrado */
+    margin-top: auto; 
+}
+
+
+footer .logos img {
+    max-width: 100px; /* Máximo ancho de 100px */
+    margin: 0 31px; /* Espaciado */
+    vertical-align: middle; /* Alineación vertical  */
+}
+
+/* Estilo para los enlaces de los logos en el pie de página */
+footer .logos a {
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Efecto al pasar el ratón por las imágenes del pie de página */
+footer .logos img:hover {
+    opacity: 0.7; /* Imagen más clara al pasar el ratón */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block; 
+        margin: 10px 5; /* Espaciado entre los elementos */
+    }
+
+    footer .logos img {
+        max-width: 70px; /*  tamaño de las imágenes */
+        margin: 15px 5px; /*  margen entre las imágenes */
+    }
+}

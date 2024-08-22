@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="centered-text">¡Bienvenidos a la Facultad Binacional!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="./src/materias.html">Materias</a></li>
+                <li><a href="#">Inscripciones</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Fotos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="welcome-section">
+        <p class="welcome-message">Estamos encantados de que estés aquí.</p>
+        <div class="carousel">
+            <!-- Radio buttons -->
+            <input type="radio" id="slide1" name="slide" checked>
+            <input type="radio" id="slide2" name="slide">
+            <input type="radio" id="slide3" name="slide">
+            <input type="radio" id="slide4" name="slide">
+            <input type="radio" id="slide5" name="slide">
+
+            <!--  imágenes -->
+            <div class="slides">
+                <div class="slide">
+                    <img src="./img/Estudiantes-universitarios.jpg" alt="Imagen 1">
+                </div>
+                <div class="slide">
+                    <img src="./img/image1.jfif" alt="Imagen 2">
+                </div>
+                <div class="slide">
+                    <img src="./img/utec5.jpg" alt="Imagen 3">
+                </div>
+                <div class="slide">
+                 <img src="./img/image2.jpg" alt="Imagen 4">
+                </div>
+                <div class="slide">
+                    <img src="./img/estudio.jfif" alt="imagen 5">
+                </div>
+
+                </div>
+            </div>
+
+            <!-- Controles -->
+            <div class="controls">
+                <label for="slide1" class="control-btn">&#9664;</label>
+                
+                <label for="slide4" class="control-btn">&#9654;</label>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logos">
+            <a href="https://utec.edu.uy/" target="_blank">
+                <img src="./img/utec.png" alt="Logo UTEC">
+            </a>
+            <a href="https://www.ifsul.edu.br/" target="_blank">
+                <img src="./img/Ifsul.png" alt="Logo IFSul">
+            </a>
+            <a href="https://www.utu.edu.uy/" target="_blank">
+                <img src="./img/utu.png" alt="Logo UTU">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
