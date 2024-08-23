@@ -9,14 +9,55 @@
 <body>
 
     <header>
-        <h1 class="centered-text">Materias</h1>
+        <h1 class="centered-text">Inscripciones</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Página Inicial</a></li>
                 <li><a href="materias.html">Materias</a></li>
                 <li><a href="inscripciones.html">Inscripciones</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Fotos</a></li>
+                <li><a href="videos.html">videos</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+
             </ul>
         </nav>
+
+    <!-- Formulario -->
+        <form action="/inscribir" method="post" enctype="multipart/form-data">
+
+          
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+         
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*" required>
+    
+          
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+    
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+        
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+    
+         
+            <label for="nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="nacimiento" name="nacimiento" required>
+    
+            <label for="curso">Curso de Interés:</label>
+            <input type="text" id="curso" name="curso" required>
+    
+        
+            <label for="mensaje">¿Por qué desea inscribirse en el curso?</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+            <!-- Botón de Envío -->
+            <input type="submit" value="Inscribirse">
+    
+        </form>
+    
     </header>

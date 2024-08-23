@@ -1,18 +1,17 @@
-/* Estilos generales para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif; /* Fuente  */
-    margin: 0; /* Sin márgenes externos */
-    padding: 0; /* Sin relleno interno */
-    background-color: #f4f4f4; /* Color de fondo gris claro */
+    font-family: Arial, sans-serif; /* Fuente */
+    margin: 0; /* Sin márgenes  */
+    padding: 0; /* Sin relleno  */
+    background-color: #fdfffd; 
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* La altura mínima es toda la ventana */
+    min-height: 100vh; 
 }
 
 /* Estilo para el encabezado de la página */
 header {
-    background-color: #4CAF50; 
-    color: white; 
+    background-color: #38943c; 
+    color: rgb(255, 247, 247); 
     padding: 10px 0; /* Espaciado interno arriba y abajo */
     text-align: center; /* Texto centrado */
 }
@@ -38,9 +37,9 @@ nav ul li {
 
 /* Estilos para los enlaces del menú */
 nav ul li a {
-    color: white; /* Color del texto en los enlaces */
-    text-decoration: none; /* Sin subrayado */
-    font-weight: bold; /* Texto en negrita */
+    color: white; 
+    text-decoration: none; /*  subrayado */
+    font-weight: bold; /*  negrita */
 }
 
 /* Sección de bienvenida centrada */
@@ -51,15 +50,14 @@ nav ul li a {
 
 /* Mensaje de bienvenida */
 .welcome-message {
-    font-size: 24px; /* Tamaño mediano del texto */
+    font-size: 24px;
     color: #3f3f3f; 
-    margin: 20px 0; /* Espaciado externo */
+    margin: 20px 0; 
 }
 
 /* Estilos del carrusel */
 .carousel {
-
-    max-width: 600px; /* Máximo ancho de 600px */
+    max-width: 600px;
     margin: 0 auto; /* Centra el carrusel horizontalmente */
     overflow: hidden; /* Oculta el contenido desbordante */
     border: 1px solid #ccc;
@@ -76,22 +74,21 @@ nav ul li a {
 .slide {
     min-width: 100%; /* Cada diapositiva ocupa todo el ancho del carrusel */
     box-sizing: border-box; /* Incluye relleno y borde en el tamaño */
-    display: flex; /* Permite el centrado de la imagen */
+    display: flex; 
     justify-content: center; /* Centra la imagen horizontal */
-    align-items: center; /* Centra la imagen vertica */
+    align-items: center; /* Centra la imagen vertical */
 }
 
 /* Estilo para las imágenes dentro de las diapositivas */
 .slide img {
-    max-width: 100%; /*  ancho */
-    max-height: 100%; /* altura  */
+    max-width: 100%; /* ancho */
+    max-height: 100%; /* altura */
     border-radius: 10px; 
-   
 }
 
 /* Oculta los botones de radio */
 input[type="radio"] {
-    display: none; /* Los botones de radio no son visibles */
+    display: none; /* Los botones de radio no  visibles */
 }
 
 /* cada radio seleccionado */
@@ -100,15 +97,15 @@ input[type="radio"] {
 }
 
 #slide2:checked ~ .slides {
-    transform: translateX(-100%); /* Muestra la segunda  */
+    transform: translateX(-100%); 
 }
 
 #slide3:checked ~ .slides {
-    transform: translateX(-200%); /* Muestra la tercera  */
+    transform: translateX(-200%);
 }
 
 #slide4:checked ~ .slides {
-    transform: translateX(-300%); /* Muestra la cuarta */
+    transform: translateX(-300%); 
 }
 
 /* Controles del carrusel */
@@ -124,12 +121,12 @@ input[type="radio"] {
 /* Estilo para los botones de control */
 .control-btn {
     background-color: rgba(0, 0, 0, 0.5);
-    color: white; /*
+    color: white;
     padding: 10px; /* Espaciado interno */
-    cursor: pointer; /* Cambia el cursor a una mano */
-    border: none; /* Sin bordes */
-    border-radius: 50%; /* Bordes redondeados */
-    font-size: 24px; /* Tamaño del texto */
+    cursor: pointer; 
+    border: none; 
+    border-radius: 50%; 
+    font-size: 24px; 
 }
 
 /* Estilos del pie de página */
@@ -141,11 +138,10 @@ footer {
     margin-top: auto; 
 }
 
-
 footer .logos img {
     max-width: 100px; /* Máximo ancho de 100px */
     margin: 0 31px; /* Espaciado */
-    vertical-align: middle; /* Alineación vertical  */
+    vertical-align: middle; /* Alineación vertical */
 }
 
 /* Estilo para los enlaces de los logos en el pie de página */
@@ -166,7 +162,168 @@ footer .logos img:hover {
     }
 
     footer .logos img {
-        max-width: 70px; /*  tamaño de las imágenes */
-        margin: 15px 5px; /*  margen entre las imágenes */
+        max-width: 70px; /* Tamaño de las imágenes */
+        margin: 15px 5px; /* Margen entre las imágenes */
     }
+}
+
+/* Estilos del formulario */
+form {
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera para darle profundidad */
+    max-width: 700px; /* Aumenta el ancho máximo del formulario */
+    margin: 20px auto; /* Espacio arriba y abajo, centrado horizontalmente */
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    border: 1px solid #ccc; /* Borde gris claro para el formulario */
+    display: flex;
+    flex-direction: column;
+    width: 90%; /* Ancho del formulario en porcentaje del contenedor */
+    box-sizing: border-box;
+}
+
+/* Estilo para las etiquetas del formulario */
+form label {
+    text-align: left;
+    font-weight: bold;
+    color: #333; /* Color del texto de las etiquetas */
+}
+
+/* Estilo para los campos de entrada del formulario */
+form input[type="text"], 
+form input[type="email"], 
+form input[type="file"], 
+form input[type="date"], 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo para el área de texto */
+form textarea {
+    height: 150px;
+}
+
+/* Estilo para el botón de envío del formulario */
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efecto suave al cambiar el color de fondo */
+}
+
+/* Efecto de hover en el botón de envío */
+form input[type="submit"]:hover {
+    background-color: #45a049; /* Cambia el color al pasar el ratón sobre el botón */
+}
+
+/* Estilos para el contenedor de videos */
+.video-container {
+    display: flex;
+    gap: 20px; /* Espacio entre los videos */
+    justify-content: center; /* Centra los videos horizontalmente */
+    align-items: center; /* Centra los videos verticalmente en el contenedor */
+    margin-top: 80px; /* Espacio desde la parte superior del viewport */
+    margin-bottom: 60px; /* Espacio desde la parte inferior del contenedor de videos */
+}
+
+.video-wrapper {
+    position: relative;
+    width: 315px; /* Ancho del contenedor del video */
+    height: 315px; /* Altura del contenedor del video para mantenerlo cuadrado */
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos del pie de página para los logos */
+footer {
+    background-color: #f4f4f4; /* Color de fondo del pie de página */
+    padding: 20px;
+    text-align: center; /* Centra los logos dentro del pie de página */
+}
+
+.logos {
+    display: flex;
+    justify-content: center; /* Centra los logos horizontalmente */
+    gap: 20px; /* Espacio entre los logos */
+}
+
+.logos img {
+    width: 80px; /* Ajusta el tamaño de los logos */
+    height: auto; /* Mantiene la proporción de los logos */
+}
+/* Estilo para el contenedor de la galería de fotos */
+.photo-gallery {
+    display: flex; /* Muestra las imágenes en fila */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan a la siguiente línea si no caben en una fila */
+    gap: 30px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    margin: 100px auto 40px; /* Aumenta el margen superior para bajar la galería más abajo */
+}
+/* Estilo para cada imagen dentro del contenedor */
+.photo-gallery img {
+    width: 210px; /* Ancho ligeramente mayor para cada imagen */
+    height: 210px; /* Altura fija para cada imagen para mantener la forma cuadrada */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para dar profundidad */
+    transition: transform 0.3s ease; /* Transición suave al aplicar transformaciones */
+}
+/* Estilo para el contenedor de las fotos */
+.fotos {
+    display: flex; /* Muestra las imágenes en fila */
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan si no caben en una sola línea */
+    margin: 40px auto; /* Espacio alrededor del contenedor */
+}
+
+/* Estilo para cada imagen dentro del contenedor */
+.fotos img {
+    width: 150px; /* Ancho fijo para cada imagen */
+    height: 150px; /* Altura fija para cada imagen para mantener la forma cuadrada */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    border-radius: 15px; /* Bordes redondeados para dar un efecto de esquinas redondeadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el efecto de movimiento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+/* Efecto de hover en las imágenes */
+.fotos img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen ligeramente al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el ratón */
+}
+/* Estilo para el contenedor de los logos */
+.logos {
+    display: flex; /* Muestra los logos en fila */
+    justify-content: center; /* Centra los logos horizontalmente */
+    gap: 30px; /* Espacio entre los logos */
+    margin: 120px auto 40px; /* Aumenta el margen superior para bajar los logos más abajo */
+}
+
+/* Estilo para cada imagen dentro del contenedor de logos */
+.logos img {
+    width: 80px; /* Tamaño de los logos, ajusta según sea necesario */
+    height: auto; /* Mantiene la proporción de los logos */
+    transition: opacity 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+/* Efecto de hover en las imágenes */
+.photo-gallery img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen ligeramente al pasar el ratón */
 }
